@@ -4,6 +4,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  // base: '/', 
   plugins: [
     react(),
     VitePWA({
@@ -13,7 +14,7 @@ export default defineConfig({
         name: 'StudySpots',
         short_name: 'StudySpots',
         description: 'Rise, Shine, Repeat. Temukan tempat belajar terbaik.',
-        theme_color: '#F8EDED', // Warna Background Cream sesuai palet
+        theme_color: '#F8EDED',
         background_color: '#F8EDED',
         display: 'standalone',
         orientation: 'portrait',
