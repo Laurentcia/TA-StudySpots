@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
-  base: "./",
+  // HAPUS baris "base" jika ada, atau biarkan default seperti ini
   plugins: [
     react(),
     VitePWA({
@@ -16,10 +16,11 @@ export default defineConfig({
         theme_color: '#F8EDED',
         background_color: '#F8EDED',
         display: 'standalone',
-        orientation: 'portrait',
+        scope: '/',
+        start_url: '/',
         icons: [
           {
-            src: 'pwa-192x192.png',
+            src: 'pwa-192x192.png', 
             sizes: '192x192',
             type: 'image/png'
           },
