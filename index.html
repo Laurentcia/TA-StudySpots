@@ -1,14 +1,21 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>StudySpots</title>
-    <meta name="description" content="Rise, Shine, Repeat. Temukan tempat belajar terbaik.">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudySpots</title>
+
+  <!-- Tambahan untuk PWA (nggak bikin error di Vercel) -->
+  <link rel="manifest" href="manifest.webmanifest" />
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <!-- WAJIB: src/main.jsx pakai path relatif, bukan /src/main.jsx -->
+  <script type="module" src="src/main.jsx"></script>
+</body>
+
 </html>
